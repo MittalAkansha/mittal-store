@@ -1,0 +1,130 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mittal Store | Online Grocery Shopping</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Mittal Store</h1>
+        <p>Your Daily Needs, Delivered Fresh!</p>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#categories">Categories</a>
+            <a href="#products">Products</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="cart">
+            🛒 Cart: <span id="cartCount">0</span>
+        </div>
+    </header>
+
+    <main>
+        
+<section id="home">
+    <div class="slider">
+        <div class="slide active">
+            <h2>Welcome to Mittal Store!</h2>
+            <p>Your daily groceries, fresh and affordable.</p>
+        </div>
+
+        <div class="slide">
+            <h2>Fresh Fruits & Vegetables</h2>
+            <p>Bring freshness to your family every day.</p>
+        </div>
+
+        <div class="slide">
+            <h2>Everyday Grocery Essentials</h2>
+            <p>Shop your daily needs in one place.</p>
+        </div>
+
+        <div class="slider-buttons">
+            <button id="prevSlide">Previous</button>
+            <button id="nextSlide">Next</button>
+        </div>
+    </div>
+
+    <button id="shopButton">Shop Now</button>
+</section>
+
+        <section id="categories">
+            <h2>Shop by Category</h2>
+            <div id="categoryContainer"></div>
+        </section>
+
+        <section id="products">
+            <h2>Our Grocery Products</h2>
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search groceries..."
+            >
+            <div id="productContainer"></div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Mittal Store</h2>
+            <p>Email: mittalstore@example.com</p>
+        </section>
+
+        
+<!-- Product Details Modal -->
+<div id="productModal" class="modal">
+    <div class="modal-content">
+        <button id="closeModal" class="close-button">×</button>
+        <h2 id="modalName">Product Name</h2>
+        <p id="modalPrice">Product Price</p>
+        <p id="modalCategory">Product Category</p>
+        <button id="modalAddToCart">Add to Cart</button>
+    </div>
+</div>
+
+
+<section id="faq">
+    <h2>Frequently Asked Questions</h2>
+
+    <div class="faq-item">
+        <button class="faq-question">
+            What products are available?
+            <span>+</span>
+        </button>
+        <p class="faq-answer">
+            We offer fruits, vegetables, dairy products and bakery items.
+        </p>
+    </div>
+
+    <div class="faq-item">
+        <button class="faq-question">
+            How can I add products to my cart?
+            <span>+</span>
+        </button>
+        <p class="faq-answer">
+            Click the Add to Cart button on your favourite product.
+        </p>
+    </div>
+
+    <div class="faq-item">
+        <button class="faq-question">
+            Can I search for a product?
+            <span>+</span>
+        </button>
+        <p class="faq-answer">
+            Yes! Use the search box to find products by name.
+        </p>
+    </div>
+</section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Mittal Store. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
